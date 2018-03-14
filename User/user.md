@@ -12,10 +12,10 @@
 
    **Input(Required):**
  
-   `name=[String]`
-   `telephone=[String]`
-   `email=[String]`
-   `password=[String]`
+   `name=[String]` <br />
+   `telephone=[String]` <br />
+   `email=[String]` <br />
+   `password=[String]` <br />
 
    **Optional:**
  
@@ -31,8 +31,6 @@
     **Content:** Account registered! Please check your e-mail for activation link.
  
 * **Error Response:**
-
-  <_Most endpoints will have many ways they can fail. From unauthorized access, to wrongful parameters etc. All of those should be liste d here. It might seem repetitive, but it helps prevent assumptions from being made where they should be._>
 
   * **Code:** 400 UNAUTHORIZED <br />
     **Content:** `{ error : "Ensure your email and password were provided" }`
