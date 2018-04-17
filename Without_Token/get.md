@@ -182,3 +182,8 @@
   * **Code:** 403 PROHIBITED <br />
     **Content:** `{ error : "Forbidden access for this user" }`
 <br />
+
+
+**GET CATEGORY**
+* **URL**
+ http://travinesia.com:3000/get/category/:category
