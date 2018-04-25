@@ -1,8 +1,43 @@
+**Get Province Trip**
+----
+* **URL**
+
+  http://travinesia.com:3000/get/province
+
+* **Method:**
+
+ `GET`
+  
+*  **URL Params**
+
+   **Input(Required):**
+
+   NONE
+
+   **Optional:**
+ 
+   NONE
+
+* **Data Params**
+
+   NONE
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** succes get all province + data:province
+ 
+* **Error Response:**
+
+  * **Code:** 400 UNAUTHORIZED <br />
+    **Content:** `{ error : "" }`
+<br />
+
 **Get Type Trip**
 ----
 * **URL**
 
-  http://travinesia.com:3000/v1/get/type
+  http://travinesia.com:3000/get/type
 
 * **Method:**
 
@@ -37,7 +72,7 @@
 ----
 * **URL**
 
-  http://travinesia.com:3000/v1/get/category
+  http://travinesia.com:3000/get/category
 
 * **Method:**
 
@@ -72,7 +107,7 @@
 ----
 * **URL**
 
-  http://travinesia.com:3000/v1/get/facility
+  http://travinesia.com:3000/get/facility
 
 * **Method:**
 
@@ -181,4 +216,109 @@
 
   * **Code:** 403 PROHIBITED <br />
     **Content:** `{ error : "Forbidden access for this user" }`
+<br />
+
+**Get Type Trip By id**
+----
+* **URL**
+
+  http://travinesia.com:3000/get/type/:id_type_trip
+
+* **Method:**
+
+ `GET`
+  
+*  **URL Params**
+
+   **Input(Required):**
+
+   NONE
+
+   **Optional:**
+ 
+   NONE
+
+* **Data Params**
+
+   `id_type_trip:req.params.id_type_trip`
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** succes get all type + data:type
+ 
+* **Error Response:**
+
+  * **Code:** 400 UNAUTHORIZED <br />
+    **Content:** `{ error : "" }`
+<br />
+
+**Get category Trip By id**
+----
+* **URL**
+
+  http://travinesia.com:3000/get/category/:category
+
+* **Method:**
+
+ `GET`
+  
+*  **URL Params**
+
+   **Input(Required):**
+
+   NONE
+
+   **Optional:**
+ 
+   NONE
+
+* **Data Params**
+
+   `category:req.params.category`
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** succes get all trip by category + data:trip
+ 
+* **Error Response:**
+
+  * **Code:** 400 UNAUTHORIZED <br />
+    **Content:** `{ error : "" }`
+<br />
+
+**Get province Trip By id**
+----
+* **URL**
+
+  http://travinesia.com:3000/get/province/:id_province
+
+* **Method:**
+
+ `GET`
+  
+*  **URL Params**
+
+   **Input(Required):**
+
+   NONE
+
+   **Optional:**
+ 
+   NONE
+
+* **Data Params**
+
+   `id_province:req.params.id_province`
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** succes get all trip by province + data:type
+ 
+* **Error Response:**
+
+  * **Code:** 400 UNAUTHORIZED <br />
+    **Content:** `{ error : "" }`
 <br />
